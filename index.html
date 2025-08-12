@@ -117,11 +117,19 @@ dark:bg-[#11001F] dark:text-white">
 
      <div class="flex items-center gap-4">
 
-        <button id="toggleTheme" onclick="toggleTheme()"
-    class="p-2 dark:text-yellow-400 ml-4">
-    <img src="./images/moon_icon.png" alt="" class="w-6 dark:hidden">
-    <img src="./images/sun_icon.png" alt="" class="w-6 hidden dark:block text-yellow">
-  </button>
+    <button id="toggleTheme" onclick="toggleTheme()" class="p-2 ml-4">
+  <!-- Moon icon SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+  </svg>
+
+  <!-- Sun icon SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 hidden dark:block text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="5" />
+    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+  </svg>
+</button>
+
 
     <a href="#contact" 
     class="hidden lg:flex items-center gap-3 px-10 py-2.5
@@ -542,5 +550,6 @@ border-gray-400 mx-[10%] mt-12 py-6">
     <script src="./script.js"></script>
 </body>
 </html>
+
 
 
